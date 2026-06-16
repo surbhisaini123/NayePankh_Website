@@ -2,8 +2,10 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className='Hero'>
-      <div className='text-Hero' >
+    <div >
+      <div className='Hero'>
+        
+         <div className='text-Hero' >
         <h3>Welcome to</h3> 
         <h1>NayePankh <span > Foundation</span></h1>
 
@@ -12,9 +14,12 @@ const Home = () => {
         <p>We work from the education,health, and empowerment of <br></br> underprivileged children and communities. </p>  <br></br>
       </div>
       <div className='button-Hero'>
-        <button>Donate Now</button>
-        <button>Learn More</button>
+        <button className='donate'>Donate Now</button>
+        <button className='learn'>Learn More</button>
       </div>
+      
+      </div>
+     
     </div>
   )
 }
