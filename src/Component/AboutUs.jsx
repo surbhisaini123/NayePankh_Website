@@ -5,6 +5,7 @@ const AboutUs = () => {
     <div className='about-section' >
       <div className='about-heading'>
          <h1  >About Us</h1>
+           <div className="underline"></div>
       </div>
       <div className='about-container'>
         <div className='about-content'>

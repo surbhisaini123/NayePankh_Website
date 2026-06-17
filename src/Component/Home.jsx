@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Imapct from './Imapct.jsx'
 const Home = () => {
   return (
     <div >
@@ -19,7 +19,7 @@ const Home = () => {
       </div>
       
       </div>
-     
+     <Imapct/>
     </div>
   )
 }
