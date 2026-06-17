@@ -4,6 +4,7 @@ import NavBar from './Component/NavBar.jsx'
 import Home from './Component/Home.jsx'
 import AboutUs from './Component/AboutUs.jsx'
 import OurProgram from './Component/OurProgram.jsx'
+import Contact from './Component/Contact.jsx'
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
       <Home/>
      <AboutUs/>
      <OurProgram/>
-    
+    <Contact/>
     </div>
   )
 }

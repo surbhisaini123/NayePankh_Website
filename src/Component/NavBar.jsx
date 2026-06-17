@@ -1,10 +1,15 @@
 import React from 'react'
-
+import Logo from "../assets/logo.png";
 const NavBar = () => {
   return (
     <div className='navbar'>
-        <div>
-            <h4>Naye-Pankh Foundation</h4>
+        <div className="logo">
+          <img src={Logo} alt="Logo" />
+
+           <div className="logo-text">
+             <h2>NayePankh</h2>
+             <p>Foundation</p>
+            </div>
         </div>
 
         <div className='nav_msg'>
@@ -15,12 +20,7 @@ const NavBar = () => {
             <p>Gallery</p>
             <p>Contact Us</p>
             <button>Donate Now</button>
-
-        </div>
-       
-
-        
-        
+        </div>    
     </div>
   )
 }

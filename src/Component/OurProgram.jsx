@@ -7,7 +7,7 @@ const OurProgram = () => {
     <div>
       <div className='program-heading'>
         <h1>Our Programs</h1>
-        <div className='uderline'></div>
+        <div className='underline'></div>
       </div>
       <div className='program-card' >
         <div className='edu-card'>
