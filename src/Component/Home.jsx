@@ -19,7 +19,10 @@ const Home = () => {
       </div>
       
       </div>
-     <Imapct/>
+      <section id='impact'>
+         <Imapct/>
+      </section>
+    
     </div>
   )
 }

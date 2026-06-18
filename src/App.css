@@ -1,4 +1,4 @@
-/* NAV BAR */
+/* <<<<<<<<<<<--------NAV BAR------->>>>>>>>>>>>> */
 .navbar{
   display: flex;
   justify-content: space-between;
@@ -6,8 +6,10 @@
   padding: 15px;
  justify-content: space-around;
 height: 80px;
-width: auto;
+ width: 100%;
+
 }
+
 .logo{
     display:flex;
     align-items:center;
@@ -37,29 +39,40 @@ width: auto;
   align-items: center;
   justify-content: center;
   gap: 60px;
+  font-size: 19px;
 
 }
+.nav_msg p{
+    cursor:pointer;
+    transition:0.3s;
+}
+.nav_msg p:hover{
+  color:  rgb(74, 121, 2);
+}
 .nav_msg button{
-  background-color: rgb(74, 121, 2);
+  background-color: rgb(63, 104, 2);
   color: white;
   width: 100px;
   height: 40px;
   border-radius: 20px;
   border: none;
+  font-size: 15px;
+}
+.nav_msg button:hover{
+  background-color: white;
+  border: 1px solid green;
+  color: green;
+  box-shadow: 2px 2px 2px green;
 }
 
-
-/* HOME */
+/* <<<<<<<<--------HOME---------->>>>>>>>>>>>> */
 
 .Hero{
-  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./assets/ngo.jpg');
-/* filter: brightness(50%); */
-  /* height:100vh; */
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('./assets/ngo_new.png');
   height: 600px;
   background-size:cover;
   padding: 150px;
   padding-top: 80px;
- 
 }
 
 .text-Hero h3,.text-Hero span {
@@ -97,7 +110,7 @@ color: white;
   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
 }
 
-/* ABOUT US */
+/* <<<<<<<<<<<<<----------ABOUT US--------->>>>>>>>>> */
 
 .about-heading{
   background:hsl(105, 36%, 96%);
@@ -124,23 +137,17 @@ color: white;
     justify-content:space-between;
     align-items:center;
     gap:60px;
-   
-    /* background-color: white; */
-    
-    
 }
  .about-content h2{
   color: green;
   margin-bottom: 20px;
   margin-top: 20px;
-  
  }
  .about-content p{
   line-height: 1.8;
   margin-bottom: 20px;
   color: hsl(0, 0%, 27%);
   font-size: large;
-
  }
 
  .join-btn{
@@ -151,8 +158,14 @@ color: white;
   width: 100px;
   height: 40px;
   font-size: medium;
-
+ cursor: pointer;
+   transition:0.3s ease;
  }
+ .join-btn:hover{
+    background:#15803d;
+    transform:scale(1.05);
+}
+
 .about-image img{
   height: 350px;
   width: 100%;
@@ -181,13 +194,12 @@ color: white;
     font-size: medium;
 }
 
-/* OUR PROGRAMS */
+/* <<<<<<<<<<<<<<<<----------OUR PROGRAMS------------->>>>>>>>>> */
 .program-heading{
     background:hsl(105, 36%, 96%);
     padding:40px 0;
     width: 100%;
  text-align: center;
-
 }
 
 .program-heading h1{
@@ -202,7 +214,6 @@ color: white;
 }
 
 .program-card{
- 
   display: flex;
   margin: 30px;
   gap: 100px;
@@ -213,7 +224,6 @@ color: white;
 .community-card{
    height: 400px;
   width: 300px;
-  /* box-shadow: 2px 2px 10px rgb(181, 177, 177); */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   overflow: hidden;
@@ -262,7 +272,7 @@ color: green;
     transform:scale(1.05);
 }
 
-/* IMPACT */
+/* <<<<<<<<<<<<-----------IMPACT-------->>>>>>>>> */
 
 .impact-section{
   display: flex;
@@ -280,14 +290,6 @@ color: green;
 .impact-section p{
   color: hsl(0, 0%, 27%);
 }
-/* .impact-card{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:25px;
-    padding: 20px; 
-/* } */
-
 
 .impact-icon{
   color: green;
@@ -295,12 +297,11 @@ color: green;
    margin-bottom:10px;
 }
 
-/* CONTACT-US */
+/*<<<<<<<<<<-------- CONTACT-US--------->>>>>>>>>> */
 
 .contact-heading{
     background:hsl(105, 36%, 96%);
     padding:40px 0;
-    /* width: 100%;//// */
  text-align: center;
 
 }
@@ -349,7 +350,7 @@ color: green;
      flex-shrink: 0;
 }
 
-/* right */
+/* <<<<<<<<------right--------->>>>>>>>>> */
 .contact-right{
    padding:25px;
     height: 500px;
@@ -395,7 +396,7 @@ color: green;
   background:#126d21;
 }
 
-/* social media */
+/* <<<<<<<<<-------social media------->>>>>>>>>>> */
 .follow-heading{
     display: flex;
     align-items: center;
@@ -443,4 +444,98 @@ color: green;
 
 .twitter{
     color:#1DA1F2;
+}
+
+/* <<<<<<<<<<-------TABLET------->>>>>>>> */
+@media (max-width:1023px){
+
+.navbar{
+    flex-direction:column;
+    height:auto;
+    padding:20px;
+}
+
+.nav_msg{
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:15px;
+}
+
+.Hero{
+    padding:80px 50px;
+    height:auto;
+}
+
+.text-Hero h1{
+    font-size:45px;
+}
+
+.about-container{
+    flex-direction:column;
+    padding:40px;
+}
+
+.about-image img{
+    width:100%;
+}
+
+.about-card{
+    flex-wrap:wrap;
+}
+
+.program-card{
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.impact-section{
+    flex-wrap:wrap;
+    height:auto;
+    gap:40px;
+}
+
+.contact-section{
+    flex-direction:column;
+}
+
+.contact-left,
+.contact-right{
+    width:100%;
+}
+
+}
+
+/* <<<<<<<<--------MOBILE-------->>>>>>>>> */
+@media (max-width:768px){
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+}
+
+.nav_msg{
+    gap:15px;
+    font-size:14px;
+}
+
+.logo img{
+    width:70px;
+}
+
+.logo-text h2{
+    font-size:18px;
+}
+
+.logo-text p{
+    font-size:10px;
+}
+
+.nav_msg button{
+    width:80px;
+    height:35px;
+    font-size:12px;
+}
+
 }

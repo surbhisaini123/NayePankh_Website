@@ -10,10 +10,19 @@ const App = () => {
   return (
     <div>
      <NavBar/>
+     <section id='home'>
       <Home/>
-     <AboutUs/>
-     <OurProgram/>
-    <Contact/>
+     </section>
+     <section id='aboutUs'>
+      <AboutUs/>
+     </section>
+     <section id='ourProgram'>
+      <OurProgram/>
+     </section>
+     <section id='contact'>
+      <Contact/>
+     </section>
+    
     </div>
   )
 }
