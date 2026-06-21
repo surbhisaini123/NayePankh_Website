@@ -5,11 +5,16 @@ import Home from './Component/Home.jsx'
 import AboutUs from './Component/AboutUs.jsx'
 import OurProgram from './Component/OurProgram.jsx'
 import Contact from './Component/Contact.jsx'
+import { useState } from 'react'
 
 const App = () => {
+  const [darkMode,setDarkMode]=useState(false)
   return (
-    <div>
-     <NavBar/>
+    <div className={darkMode ? "dark-mode": "light-mode"}>
+     <NavBar
+     darkMode={darkMode}
+     setDarkMode={setDarkMode}
+     />
      <section id='home'>
       <Home/>
      </section>

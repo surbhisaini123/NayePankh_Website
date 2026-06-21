@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from "../assets/logo.png";
-const NavBar = () => {
+import DarkMode from './DarkMode';
+const NavBar = ({darkMode,setDarkMode}) => {
   return (
     <div className='navbar'>
         <div className="logo">
@@ -19,6 +20,10 @@ const NavBar = () => {
             <p  onClick={() =>document.getElementById("impact").scrollIntoView({   behavior: "smooth", })}>Impact</p>
             <p onClick={() =>document.getElementById("contact").scrollIntoView({   behavior: "smooth", })}>Contact</p>
             <button>Donate Now</button>
+            <DarkMode
+               darkMode={darkMode}
+               setDarkMode={setDarkMode}
+            />
         </div>
         
     </div>

@@ -108,6 +108,7 @@ height: 80px;
 color: white;
   border: white 1px solid;
   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  border: none;
 }
 
 /* <<<<<<<<<<<<<----------ABOUT US--------->>>>>>>>>> */
@@ -538,4 +539,98 @@ color: green;
     font-size:12px;
 }
 
+}
+
+/* <<<<<<<<<---------DARK MODE && LIGHT MODE */
+.light-mode{
+    background:white;
+    color:black;
+}
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+/* navbar css*/
+.theme-btn{
+    height:40px;
+    width:40px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:20px;
+    background:#198d2c;
+    color:white;
+    border: none;
+}
+
+.theme-btn:hover{
+    background:#126d21;
+}
+.dark-mode .navbar{
+
+    background:#1b1b1b;
+
+}
+/* Home css */
+.dark-mode .Hero{
+    filter:brightness(.8);
+}
+/* About css */
+.dark-mode .about-container{
+
+    background:#1c1c1c;
+
+}
+
+.dark-mode .about-content p{
+    color:#d8d8d8;
+}
+.dark-mode .card{
+    background:#2a2a2a;
+}
+/* Program */
+.dark-mode .edu-card,
+.dark-mode .women-card,
+.dark-mode .community-card{
+    background:#2a2a2a;
+    color:white;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    
+}
+/* Impact */
+.dark-mode .impact-section{
+    background:#222;
+}
+/* Contact */
+.dark-mode .contact-section{
+    background:#181818;
+}
+
+.dark-mode .contact-left,
+.dark-mode .contact-right{
+    background:#222;
+}
+
+.dark-mode input,
+.dark-mode textarea{
+    background:#333;
+    color:white;
+    border:1px solid #555;
+}
+/* Heading */
+.dark-mode .about-heading,
+.dark-mode .program-heading,
+.dark-mode .contact-heading{
+
+    background:#1c1c1c;
+
+}
+/* Paragraph */
+.dark-mode p{
+    color:#d9d9d9;
+}
+/* Button */
+.dark-mode button{
+    background:#198d2c;
 }
